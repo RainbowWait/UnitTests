@@ -9,5 +9,7 @@ pod 'Alamofire', '~> 4.5'
   end
 
   target 'TestUnitUITests' do
+pod 'Alamofire', '~> 4.5'
+
   end
 end

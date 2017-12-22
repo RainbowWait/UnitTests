@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		60E87A3A9DEABB149B434B3C /* Pods_TestUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951DF9011B4BED659702970 /* Pods_TestUnit.framework */; };
+		6834918A207214DACE6FB6F5 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
 		94B19583F180FDB34A6E2752 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */; };
+		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
+		A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
+		A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
+		A8E2C77B1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8EDD3F31FE21104004D97D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */; };
 		A8EDD3F51FE21104004D97D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8EDD3F81FE21104004D97D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDD3F61FE21104004D97D1 /* Main.storyboard */; };
@@ -18,8 +24,6 @@
 		A8EDD4001FE21104004D97D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */; };
 		A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */; };
 		A8EDD4161FE21104004D97D1 /* TestUnitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD4151FE21104004D97D1 /* TestUnitUITests.swift */; };
-		C769187995F2EB69B09742BF /* Pods_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EB5CEFF92D44EA8BB3B400 /* Pods_TestUnitUITests.framework */; };
-		F7529ED2B738284CBD008677 /* Pods_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A11AD06252510BBD0C2EEFB /* Pods_TestUnitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +43,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A8E2C77C1FECE8CF008209B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8E2C77B1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Embed Frameworks */,
+				A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A8A36A89734B9109628856F /* Pods-TestUnit-TestUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitTests/Pods-TestUnit-TestUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUnit_TestUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF31D284A2FF4312875CF95 /* Pods-TestUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitTests/Pods-TestUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		214788C5B8ABF573417D6AE3 /* Pods-TestUnit-TestUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitTests/Pods-TestUnit-TestUnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		38EB5CEFF92D44EA8BB3B400 /* Pods_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3951DF9011B4BED659702970 /* Pods_TestUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		707F2DDFDDE124AFB3FD6A4A /* Pods-TestUnit-TestUnitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		779604E1FA52D201D99C1C73 /* Pods-TestUnitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitUITests/Pods-TestUnitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7A11AD06252510BBD0C2EEFB /* Pods_TestUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A42F3C607697B17BED92F /* Pods-TestUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitTests/Pods-TestUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EDD3EF1FE21104004D97D1 /* TestUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8EDD3F41FE21104004D97D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
+				A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
+				A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
 				60E87A3A9DEABB149B434B3C /* Pods_TestUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7529ED2B738284CBD008677 /* Pods_TestUnitTests.framework in Frameworks */,
 				7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C769187995F2EB69B09742BF /* Pods_TestUnitUITests.framework in Frameworks */,
 				94B19583F180FDB34A6E2752 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
+				6834918A207214DACE6FB6F5 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +141,8 @@
 		51843B94509CDDD09A193284 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */,
 				3951DF9011B4BED659702970 /* Pods_TestUnit.framework */,
-				7A11AD06252510BBD0C2EEFB /* Pods_TestUnitTests.framework */,
-				38EB5CEFF92D44EA8BB3B400 /* Pods_TestUnitUITests.framework */,
 				0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */,
 				0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */,
 			);
@@ -197,6 +216,7 @@
 				A8EDD3ED1FE21104004D97D1 /* Resources */,
 				2DE8F49BE12C1681FC9B66BD /* [CP] Embed Pods Frameworks */,
 				43927D9DBD8809F6DEFBF0F3 /* [CP] Copy Pods Resources */,
+				A8E2C77C1FECE8CF008209B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -655,6 +675,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274QRM25A5;
 				INFOPLIST_FILE = TestUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -671,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274QRM25A5;
 				INFOPLIST_FILE = TestUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";

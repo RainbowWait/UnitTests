@@ -8,29 +8,47 @@
 
 import XCTest
 import Alamofire
-@testable import TestUnit
+//@testable import TestUnit
 
 class TestUnitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        //初始化的代码，在测试方法调用之前调用
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // 释放测试用例的资源代码，这个方法会每个测试用例执行后调用
         super.tearDown()
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // 测试用例的例子，注意测试用例一定要test开头
     }
     
+    func testAlamofire() {
+        let expecta = expectation(description: "")
+        let timeout: TimeInterval = 15
+        
+        //https://www.cqcb.com/newlist42.html
+        Alamofire.request("https://www.cqcb.com/e/member/getuserfen.php",  method: .get).responseJSON { (response) in
+            print(response.result)
+            if response.error != nil {
+               expecta.fulfill()
+                XCTAssertNil(response.error, "请求出错")
+            } else {
+              expecta.fulfill()
+                XCTAssertNil(response.result.error, "测试通过")
+            }
+        }
+       waitForExpectations(timeout: timeout, handler: nil)
+    }
+    
+    
     func testPerformanceExample() {
-        // This is an example of a performance test case.
+        // 测试性能例子
         self.measure {
-            // Put the code you want to measure the time of here.
+            // 需要测试性能的代码
         }
     }
     
