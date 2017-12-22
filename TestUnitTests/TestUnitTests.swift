@@ -7,7 +7,7 @@
 //
 
 import XCTest
-//import ViewController
+import Alamofire
 @testable import TestUnit
 
 class TestUnitTests: XCTestCase {
