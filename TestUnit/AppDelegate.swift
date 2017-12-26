@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+//@NSApplicationMain
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

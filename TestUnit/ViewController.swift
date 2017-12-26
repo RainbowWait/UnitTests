@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import HandyJSON
 
 class ViewController: UIViewController {
 
