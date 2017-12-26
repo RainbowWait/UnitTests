@@ -9,23 +9,29 @@
 import UIKit
 import Alamofire
 import HandyJSON
+import CalculatorKit
 
 class ViewController: UIViewController {
 
+    var calculator = Calculator()
+    @IBOutlet weak var display: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        Alamofire.request("https://www.cqcb.com/e/member/getuserfen.php",  method: .get).responseJSON { (response) in
-            print(response)
-            if response.error != nil {
-//                expecta.fulfill()
-//                XCTAssertNil(response.error, "请求出错")
-            } else {
-//                expecta.fulfill()
-//                XCTAssertNil(response.result.error, "测试通过")
+
+    }
+    @IBAction func tap(_ sender: UIButton) {
+        if let label = sender.titleLabel?.text {
+            
+            do {
+                try calculator.input(label)
+                display.text = calculator.displayValue
+                print("text = \(label)")
+            } catch let error {
+                print("\(error.localizedDescription)")
             }
         }
     }
+    
     
     func recycle()  {
         for i in 1...100 {

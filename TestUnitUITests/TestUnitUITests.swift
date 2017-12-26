@@ -10,7 +10,8 @@ import XCTest
 
 
 class TestUnitUITests: XCTestCase {
-        
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -32,6 +33,17 @@ class TestUnitUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testAddition() {
+        app.buttons["6"].tap()
+        app.buttons["+"].tap()
+        app.buttons["2"].tap()
+        app.buttons["="].tap()
+        if let textFieldValue = app.textFields["display"].value as? String {
+           
+                                    XCTAssertTrue((textFieldValue == "8"), "Part 1 failed.")
+        }
     }
     
 }

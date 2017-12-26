@@ -15,6 +15,9 @@
 		A8A47F341FF0AE71000CE4EE /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */; };
 		A8A47F351FF0AE71000CE4EE /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
+		A8A47F7E1FF23975000CE4EE /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; };
+		A8A47F7F1FF23984000CE4EE /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; };
+		A8A47F801FF23984000CE4EE /* CalculatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
 		A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -55,6 +58,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A8E2C77B1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Embed Frameworks */,
+				A8A47F801FF23984000CE4EE /* CalculatorKit.framework in Embed Frameworks */,
 				A8A47F351FF0AE71000CE4EE /* HandyJSON.framework in Embed Frameworks */,
 				A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */,
 			);
@@ -75,6 +79,7 @@
 		8E7A42F3C607697B17BED92F /* Pods-TestUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitTests/Pods-TestUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
+		A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E2C7871FF098D4008209B0 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A8EDD3EF1FE21104004D97D1 /* TestUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +110,10 @@
 				A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
+				A8A47F7F1FF23984000CE4EE /* CalculatorKit.framework in Frameworks */,
 				A8A47F341FF0AE71000CE4EE /* HandyJSON.framework in Frameworks */,
 				60E87A3A9DEABB149B434B3C /* Pods_TestUnit.framework in Frameworks */,
+				A8A47F7E1FF23975000CE4EE /* CalculatorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +172,7 @@
 				A8EDD4091FE21104004D97D1 /* TestUnitTests */,
 				A8EDD4141FE21104004D97D1 /* TestUnitUITests */,
 				A8EDD3F01FE21104004D97D1 /* Products */,
+				A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */,
 				0DAE1E606E37C41887F937A4 /* Pods */,
 				51843B94509CDDD09A193284 /* Frameworks */,
 			);
@@ -691,6 +699,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestUnit",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TestUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -712,6 +721,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestUnit",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TestUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

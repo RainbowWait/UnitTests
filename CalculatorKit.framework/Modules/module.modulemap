@@ -1,0 +1,4 @@
+framework module CalculatorKit {
+    header "CalculatorKit-Swift.h"
+    requires objc
+}
