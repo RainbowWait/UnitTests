@@ -7,22 +7,123 @@
 //
 
 import XCTest
+import CalculatorKit
 
 class UnitConversionsTests: XCTestCase {
     
+    var calculator: Calculator!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.calculator = Calculator()
+        XCTAssertNotNil(self.calculator, "Cannot create Calculator instance.")
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+    }
+    
+    func testAddition() {
+        if let calculator = calculator {
+            try? calculator.input("6")
+            try? calculator.input("+")
+            try? calculator.input("2")
+            try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "8", "计算错误")
+        }
+    }
+    
+    func testSubtraction() {
+        if let calculator = calculator {
+            try? calculator.input("1")
+            try? calculator.input("9")
+            try? calculator.input("-")
+            try? calculator.input("2")
+             try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "17", "计算错误")
+        }
+    }
+    
+    func testDivision() {
+        if let calculator = calculator {
+            
+            try? calculator.input("1")
+            try? calculator.input("9")
+            try? calculator.input("/")
+            try? calculator.input("8")
+            try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "2.375")
+        }
+    }
+    
+    func testMultiplication() {
+        if let calculator = calculator {
+            
+            try? calculator.input("6")
+            try? calculator.input("*")
+            try? calculator.input("2")
+            try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "12")
+        }
+    }
+    
+    func testSubtractionNegativeResult() {
+        if let calculator = calculator {
+            
+            try? calculator.input("6")
+            try? calculator.input("-")
+            try? calculator.input("2")
+            try? calculator.input("4")
+            try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "-18")
+        }
+    }
+    
+    func testClearLastEntry() {
+        if let calculator = calculator {
+            
+            try? calculator.input("7")
+            try? calculator.input("+")
+            try? calculator.input("3")
+            try? calculator.input("C")
+            try? calculator.input("4")
+            try? calculator.input("=")
+            XCTAssertTrue(calculator.displayValue == "11")
+        }
+    }
+    
+    func testClearComputation() {
+        if let calculator = calculator {
+            
+            try? calculator.input("C")
+            try? calculator.input("7")
+            try? calculator.input("+")
+            try? calculator.input("3")
+            try? calculator.input("C")
+            try? calculator.input("C")
+            XCTAssertTrue(calculator.displayValue == "0")
+        }
+    }
+    
+    func testInputException() {
+        if let calculator = calculator {
+            XCTAssertThrowsError(try calculator.input("67"), "67输入错误", { (error) in
+                print(error.localizedDescription)
+            })
+            
+            XCTAssertThrowsError(try calculator.input("j"), "j输入错误", { (error) in
+                print(error.localizedDescription)
+            })
+            
+            XCTAssertThrowsError(try calculator.input(nil), "不能输入空", { (error) in
+                print(error.localizedDescription)
+            })
+            
+        }
     }
     
     func testPerformanceExample() {
