@@ -1,4 +1,11 @@
 framework module CalculatorKit {
+  umbrella header "CalculatorKit.h"
+
+  export *
+  module * { export * }
+}
+
+module CalculatorKit.Swift {
     header "CalculatorKit-Swift.h"
     requires objc
 }

@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-//@NSApplicationMain
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        #if false
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        let tab = UITabBarController()
+        let v1 = ViewController()
+        let navi1 = BaseNavigationController(rootViewController: v1)
+        let itme1 = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 1)
+        itme1.title = "首页"
+        navi1.tabBarItem = itme1
+        
+        let v2 = SecondViewController()
+        let navi2 = BaseNavigationController(rootViewController: v2)
+        
+        let itme2 = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.favorites, tag: 2)
+        itme2.title = "第二页"
+        navi2.tabBarItem = itme2
+        
+        let v3 = ThirdViewController()
+        let navi3 = BaseNavigationController(rootViewController: v3)
+        
+        let itme3 = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.history, tag: 3)
+        itme3.title = "第三页"
+        navi3.tabBarItem = itme3
+        tab.viewControllers = [navi1, navi2,navi3]
+        self.window?.rootViewController = tab
+            #endif
         return true
     }
 

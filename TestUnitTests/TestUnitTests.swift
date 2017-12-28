@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 import Alamofire
-//import HandyJSON
+import HandyJSON
 
 
 class TestUnitTests: XCTestCase {
@@ -43,8 +43,10 @@ class TestUnitTests: XCTestCase {
                expecta.fulfill()
                XCTAssertNil(response.error, "请求出错")
             } else {
+                let result = response.result as? String
                 
-//                let base = BaseModel.deserialize(from: response.result)
+                let base = BaseModel.deserialize(from: result)
+//                XCTAssertTrue(base?.state == 0, "成功")
                 
               expecta.fulfill()
             XCTAssertNil(response.result.error, "测试通过")

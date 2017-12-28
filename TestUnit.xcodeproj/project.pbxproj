@@ -11,13 +11,7 @@
 		6834918A207214DACE6FB6F5 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
 		94B19583F180FDB34A6E2752 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */; };
-		A89F7C9C1FF0A85F008EA8BC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2C7871FF098D4008209B0 /* BaseModel.swift */; };
-		A8A47F341FF0AE71000CE4EE /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */; };
-		A8A47F351FF0AE71000CE4EE /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
-		A8A47F7E1FF23975000CE4EE /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; };
-		A8A47F7F1FF23984000CE4EE /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; };
-		A8A47F801FF23984000CE4EE /* CalculatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
 		A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -31,6 +25,30 @@
 		A8EDD4001FE21104004D97D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */; };
 		A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */; };
 		A8EDD4161FE21104004D97D1 /* TestUnitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD4151FE21104004D97D1 /* TestUnitUITests.swift */; };
+		A8FA2EBD1FF34D69001E5013 /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; };
+		A8FA2EBE1FF34DA9001E5013 /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; };
+		A8FA2EBF1FF34DA9001E5013 /* CalculatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8FA2EC11FF34E28001E5013 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */; };
+		A8FA2EC21FF34E42001E5013 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */; };
+		A8FA2EC31FF34E42001E5013 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8FA2EC41FF34EA2001E5013 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */; };
+		A8FA2EC51FF34F7B001E5013 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2C7871FF098D4008209B0 /* BaseModel.swift */; };
+		A8FA2EC71FF350D9001E5013 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */; };
+		A8FA2ECA1FF35174001E5013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EC81FF35174001E5013 /* LoginViewController.swift */; };
+		A8FA2ECB1FF35174001E5013 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2EC91FF35174001E5013 /* LoginViewController.xib */; };
+		A8FA2ECE1FF35184001E5013 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2ECC1FF35184001E5013 /* ThirdViewController.swift */; };
+		A8FA2ECF1FF35184001E5013 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2ECD1FF35184001E5013 /* ThirdViewController.xib */; };
+		A8FA2EF11FF392A6001E5013 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */; };
+		A8FA2EF21FF392A6001E5013 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2EF01FF392A6001E5013 /* SecondViewController.xib */; };
+		A8FA2EF51FF395E5001E5013 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EF31FF395E5001E5013 /* RegisterViewController.swift */; };
+		A8FA2EF61FF395E5001E5013 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2EF41FF395E5001E5013 /* RegisterViewController.xib */; };
+		A8FA2EF91FF395FB001E5013 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EF71FF395FB001E5013 /* ForgetPasswordViewController.swift */; };
+		A8FA2EFA1FF395FB001E5013 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2EF81FF395FB001E5013 /* ForgetPasswordViewController.xib */; };
+		A8FA2EFE1FF48487001E5013 /* RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EFC1FF48487001E5013 /* RegisterCell.swift */; };
+		A8FA2EFF1FF48487001E5013 /* RegisterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2EFD1FF48487001E5013 /* RegisterCell.xib */; };
+		A8FA2F021FF48BDD001E5013 /* RegisterCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2F001FF48BDD001E5013 /* RegisterCodeCell.swift */; };
+		A8FA2F031FF48BDD001E5013 /* RegisterCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2F011FF48BDD001E5013 /* RegisterCodeCell.xib */; };
+		A8FA2F051FF49BF3001E5013 /* FooterVier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2F041FF49BF3001E5013 /* FooterVier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +76,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A8E2C77B1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Embed Frameworks */,
-				A8A47F801FF23984000CE4EE /* CalculatorKit.framework in Embed Frameworks */,
-				A8A47F351FF0AE71000CE4EE /* HandyJSON.framework in Embed Frameworks */,
+				A8FA2EC31FF34E42001E5013 /* HandyJSON.framework in Embed Frameworks */,
+				A8FA2EBF1FF34DA9001E5013 /* CalculatorKit.framework in Embed Frameworks */,
 				A8E2C7791FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,9 +95,7 @@
 		707F2DDFDDE124AFB3FD6A4A /* Pods-TestUnit-TestUnitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		779604E1FA52D201D99C1C73 /* Pods-TestUnitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitUITests/Pods-TestUnitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E7A42F3C607697B17BED92F /* Pods-TestUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitTests/Pods-TestUnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
-		A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E2C7871FF098D4008209B0 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A8EDD3EF1FE21104004D97D1 /* TestUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +112,24 @@
 		A8EDD4111FE21104004D97D1 /* TestUnitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EDD4151FE21104004D97D1 /* TestUnitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUnitUITests.swift; sourceTree = "<group>"; };
 		A8EDD4171FE21104004D97D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = "<group>"; };
+		A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
+		A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A8FA2EC81FF35174001E5013 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8FA2EC91FF35174001E5013 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A8FA2ECC1FF35184001E5013 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		A8FA2ECD1FF35184001E5013 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A8FA2EF01FF392A6001E5013 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		A8FA2EF31FF395E5001E5013 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8FA2EF41FF395E5001E5013 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A8FA2EF71FF395FB001E5013 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		A8FA2EF81FF395FB001E5013 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		A8FA2EFC1FF48487001E5013 /* RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCell.swift; sourceTree = "<group>"; };
+		A8FA2EFD1FF48487001E5013 /* RegisterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCell.xib; sourceTree = "<group>"; };
+		A8FA2F001FF48BDD001E5013 /* RegisterCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCodeCell.swift; sourceTree = "<group>"; };
+		A8FA2F011FF48BDD001E5013 /* RegisterCodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCodeCell.xib; sourceTree = "<group>"; };
+		A8FA2F041FF49BF3001E5013 /* FooterVier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterVier.swift; sourceTree = "<group>"; };
 		AF1E58AB9FDE495B6DBA4CAF /* Pods-TestUnitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitUITests/Pods-TestUnitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D11BE2E5BF580402D367679F /* Pods-TestUnit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit/Pods-TestUnit.release.xcconfig"; sourceTree = "<group>"; };
 		E3FA46488EB21FAAA45784DC /* Pods-TestUnit-TestUnitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,10 +144,11 @@
 				A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
-				A8A47F7F1FF23984000CE4EE /* CalculatorKit.framework in Frameworks */,
-				A8A47F341FF0AE71000CE4EE /* HandyJSON.framework in Frameworks */,
+				A8FA2EBE1FF34DA9001E5013 /* CalculatorKit.framework in Frameworks */,
+				A8FA2EC11FF34E28001E5013 /* HandyJSON.framework in Frameworks */,
+				A8FA2EC21FF34E42001E5013 /* HandyJSON.framework in Frameworks */,
 				60E87A3A9DEABB149B434B3C /* Pods_TestUnit.framework in Frameworks */,
-				A8A47F7E1FF23975000CE4EE /* CalculatorKit.framework in Frameworks */,
+				A8FA2EBD1FF34D69001E5013 /* CalculatorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
+				A8FA2EC41FF34EA2001E5013 /* HandyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +208,8 @@
 				A8EDD4091FE21104004D97D1 /* TestUnitTests */,
 				A8EDD4141FE21104004D97D1 /* TestUnitUITests */,
 				A8EDD3F01FE21104004D97D1 /* Products */,
-				A8A47F7D1FF23975000CE4EE /* CalculatorKit.framework */,
+				A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */,
+				A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */,
 				0DAE1E606E37C41887F937A4 /* Pods */,
 				51843B94509CDDD09A193284 /* Frameworks */,
 			);
@@ -191,9 +228,20 @@
 		A8EDD3F11FE21104004D97D1 /* TestUnit */ = {
 			isa = PBXGroup;
 			children = (
-				A8A47EE71FF0A9E9000CE4EE /* HandyJSON.framework */,
+				A8FA2EFB1FF4846F001E5013 /* View */,
 				A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */,
+				A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */,
 				A8EDD3F41FE21104004D97D1 /* ViewController.swift */,
+				A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */,
+				A8FA2EF01FF392A6001E5013 /* SecondViewController.xib */,
+				A8FA2EC81FF35174001E5013 /* LoginViewController.swift */,
+				A8FA2EC91FF35174001E5013 /* LoginViewController.xib */,
+				A8FA2EF31FF395E5001E5013 /* RegisterViewController.swift */,
+				A8FA2EF41FF395E5001E5013 /* RegisterViewController.xib */,
+				A8FA2EF71FF395FB001E5013 /* ForgetPasswordViewController.swift */,
+				A8FA2EF81FF395FB001E5013 /* ForgetPasswordViewController.xib */,
+				A8FA2ECC1FF35184001E5013 /* ThirdViewController.swift */,
+				A8FA2ECD1FF35184001E5013 /* ThirdViewController.xib */,
 				A8EDD3F61FE21104004D97D1 /* Main.storyboard */,
 				A8EDD3FC1FE21104004D97D1 /* Assets.xcassets */,
 				A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */,
@@ -221,6 +269,18 @@
 				A8EDD4171FE21104004D97D1 /* Info.plist */,
 			);
 			path = TestUnitUITests;
+			sourceTree = "<group>";
+		};
+		A8FA2EFB1FF4846F001E5013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA2EFC1FF48487001E5013 /* RegisterCell.swift */,
+				A8FA2EFD1FF48487001E5013 /* RegisterCell.xib */,
+				A8FA2F001FF48BDD001E5013 /* RegisterCodeCell.swift */,
+				A8FA2F011FF48BDD001E5013 /* RegisterCodeCell.xib */,
+				A8FA2F041FF49BF3001E5013 /* FooterVier.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +400,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FA2ECB1FF35174001E5013 /* LoginViewController.xib in Resources */,
 				A8EDD4001FE21104004D97D1 /* LaunchScreen.storyboard in Resources */,
+				A8FA2EF61FF395E5001E5013 /* RegisterViewController.xib in Resources */,
+				A8FA2EFF1FF48487001E5013 /* RegisterCell.xib in Resources */,
+				A8FA2EF21FF392A6001E5013 /* SecondViewController.xib in Resources */,
+				A8FA2EFA1FF395FB001E5013 /* ForgetPasswordViewController.xib in Resources */,
 				A8EDD3FD1FE21104004D97D1 /* Assets.xcassets in Resources */,
+				A8FA2ECF1FF35184001E5013 /* ThirdViewController.xib in Resources */,
 				A8EDD3F81FE21104004D97D1 /* Main.storyboard in Resources */,
+				A8FA2F031FF48BDD001E5013 /* RegisterCodeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,8 +590,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FA2F051FF49BF3001E5013 /* FooterVier.swift in Sources */,
+				A8FA2EFE1FF48487001E5013 /* RegisterCell.swift in Sources */,
+				A8FA2EC71FF350D9001E5013 /* BaseNavigationController.swift in Sources */,
 				A8EDD3F51FE21104004D97D1 /* ViewController.swift in Sources */,
 				A8EDD3F31FE21104004D97D1 /* AppDelegate.swift in Sources */,
+				A8FA2EF51FF395E5001E5013 /* RegisterViewController.swift in Sources */,
+				A8FA2EF91FF395FB001E5013 /* ForgetPasswordViewController.swift in Sources */,
+				A8FA2ECA1FF35174001E5013 /* LoginViewController.swift in Sources */,
+				A8FA2EF11FF392A6001E5013 /* SecondViewController.swift in Sources */,
+				A8FA2ECE1FF35184001E5013 /* ThirdViewController.swift in Sources */,
+				A8FA2F021FF48BDD001E5013 /* RegisterCodeCell.swift in Sources */,
 				A8EDD3FB1FE21104004D97D1 /* TestUnit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,8 +609,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FA2EC51FF34F7B001E5013 /* BaseModel.swift in Sources */,
 				A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */,
-				A89F7C9C1FF0A85F008EA8BC /* BaseModel.swift in Sources */,
 				A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,6 +817,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274QRM25A5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";
@@ -759,6 +839,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274QRM25A5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";

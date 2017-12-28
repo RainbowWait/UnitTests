@@ -7,12 +7,12 @@
 //
 
 import Foundation
-//import HandyJSON
-//
-//class BaseModel: HandyJSON {
-//    var message = ""
-//    var state: Int = 0
-//    required init() {
-//    }
-//}
+import HandyJSON
+
+class BaseModel: HandyJSON {
+    var message = ""
+    var state: Int = 0
+    required init() {
+    }
+}
 

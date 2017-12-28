@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="RegisterCodeCell" customModule="TestUnit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IL7-nr-F0y">
+                        <rect key="frame" x="207" y="45" width="87" height="24"/>
+                        <inset key="contentEdgeInsets" minX="5" minY="3" maxX="5" maxY="3"/>
+                        <state key="normal" title="获取验证码"/>
+                        <connections>
+                            <action selector="getCodeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IWy-ID-3f5"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-Ah-DY1" userLabel="superView">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="114"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_uc_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Njx-hy-YdJ">
+                                <rect key="frame" x="10" y="48.5" width="16" height="16"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QbM-O7-u3n">
+                                <rect key="frame" x="0.0" y="113.5" width="197" height="0.0"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="51E-Fa-NPK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Njx-hy-YdJ" firstAttribute="leading" secondItem="Arh-Ah-DY1" secondAttribute="leading" constant="10" id="1LT-D4-gZP"/>
+                            <constraint firstAttribute="trailing" secondItem="QbM-O7-u3n" secondAttribute="trailing" id="Ac1-ES-EfT"/>
+                            <constraint firstAttribute="bottom" secondItem="QbM-O7-u3n" secondAttribute="bottom" id="app-YE-Toq"/>
+                            <constraint firstItem="Njx-hy-YdJ" firstAttribute="centerY" secondItem="Arh-Ah-DY1" secondAttribute="centerY" id="hXj-ct-vi5"/>
+                            <constraint firstItem="QbM-O7-u3n" firstAttribute="leading" secondItem="Arh-Ah-DY1" secondAttribute="leading" id="juO-mM-yOV"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FMe-ka-tNx">
+                        <rect key="frame" x="39" y="0.0" width="53" height="113"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FMe-ka-tNx" secondAttribute="bottom" id="8nn-CQ-G7s"/>
+                    <constraint firstAttribute="bottom" secondItem="Arh-Ah-DY1" secondAttribute="bottom" id="OhL-lk-Vkb"/>
+                    <constraint firstItem="Arh-Ah-DY1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PXC-We-xgA"/>
+                    <constraint firstItem="IL7-nr-F0y" firstAttribute="leading" secondItem="Arh-Ah-DY1" secondAttribute="trailing" constant="10" id="SWJ-km-oCP"/>
+                    <constraint firstItem="IL7-nr-F0y" firstAttribute="centerY" secondItem="Arh-Ah-DY1" secondAttribute="centerY" id="bsZ-Ih-TOo"/>
+                    <constraint firstItem="FMe-ka-tNx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="l1Z-S4-Dhr"/>
+                    <constraint firstItem="FMe-ka-tNx" firstAttribute="leading" secondItem="Njx-hy-YdJ" secondAttribute="trailing" constant="13" id="nOS-t9-h5Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IL7-nr-F0y" secondAttribute="trailing" constant="10" id="umC-fZ-7sQ"/>
+                    <constraint firstItem="Arh-Ah-DY1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="w8D-mt-C0e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="codeBtn" destination="IL7-nr-F0y" id="zDs-DH-13w"/>
+                <outlet property="codeField" destination="FMe-ka-tNx" id="SZ4-LU-qfU"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_uc_phone" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="RegisterCell" customModule="TestUnit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="232.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8z8-7w-c3u">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="232.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_uc_phone" translatesAutoresizingMaskIntoConstraints="NO" id="FTi-bP-gIT">
+                                <rect key="frame" x="10" y="108" width="16" height="16"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ngp-4y-dJH">
+                                <rect key="frame" x="39" y="0.0" width="287" height="232.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQ2-Sy-Nn2">
+                                <rect key="frame" x="0.0" y="232.5" width="326" height="0.0"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="1EP-h6-R7J"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HQ2-Sy-Nn2" secondAttribute="bottom" id="Boe-si-c3p"/>
+                            <constraint firstItem="FTi-bP-gIT" firstAttribute="leading" secondItem="8z8-7w-c3u" secondAttribute="leading" constant="10" id="REg-iR-y0l"/>
+                            <constraint firstItem="Ngp-4y-dJH" firstAttribute="top" secondItem="8z8-7w-c3u" secondAttribute="top" id="SI6-vU-xga"/>
+                            <constraint firstItem="FTi-bP-gIT" firstAttribute="centerY" secondItem="8z8-7w-c3u" secondAttribute="centerY" id="XVG-LI-HSH"/>
+                            <constraint firstItem="Ngp-4y-dJH" firstAttribute="leading" secondItem="FTi-bP-gIT" secondAttribute="trailing" constant="13" id="dgm-10-BJz"/>
+                            <constraint firstAttribute="bottom" secondItem="Ngp-4y-dJH" secondAttribute="bottom" id="fiG-v9-12Z"/>
+                            <constraint firstItem="Ngp-4y-dJH" firstAttribute="centerY" secondItem="8z8-7w-c3u" secondAttribute="centerY" id="kVp-38-4oN"/>
+                            <constraint firstAttribute="trailing" secondItem="HQ2-Sy-Nn2" secondAttribute="trailing" id="lMG-eJ-11m"/>
+                            <constraint firstItem="HQ2-Sy-Nn2" firstAttribute="leading" secondItem="8z8-7w-c3u" secondAttribute="leading" id="n4H-bo-Jaj"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngp-4y-dJH" secondAttribute="trailing" id="tZo-4u-Grl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8z8-7w-c3u" secondAttribute="trailing" id="JYd-yI-Kqy"/>
+                    <constraint firstAttribute="bottom" secondItem="8z8-7w-c3u" secondAttribute="bottom" id="Pqp-FP-9uw"/>
+                    <constraint firstItem="8z8-7w-c3u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vz3-M8-AmZ"/>
+                    <constraint firstItem="8z8-7w-c3u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="feB-mk-X3P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="field" destination="Ngp-4y-dJH" id="ka1-mq-kme"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="27"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_uc_phone" width="16" height="16"/>
+    </resources>
+</document>
