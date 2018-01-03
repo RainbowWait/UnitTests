@@ -12,10 +12,12 @@ import CalculatorKit
 class UnitConversionsTests: XCTestCase {
     
     var calculator: Calculator!
+    var vc:ViewController!
     
     override func setUp() {
         super.setUp()
         self.calculator = Calculator()
+        self.vc = ViewController()
         XCTAssertNotNil(self.calculator, "Cannot create Calculator instance.")
     }
     
@@ -129,7 +131,7 @@ class UnitConversionsTests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            vc.recycle()
         }
     }
     

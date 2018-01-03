@@ -10,16 +10,17 @@ import Foundation
 import XCTest
 import Alamofire
 import HandyJSON
+import Quick
+import Nimble
 
 
 class TestUnitTests: XCTestCase {
+//    var VC: ViewController!
     
     override func setUp() {
         super.setUp()
         //初始化的代码，在测试方法调用之前调用
-    }
-    override static func setUp() {
-        
+//        VC = ViewController()
     }
     
     override func tearDown() {
@@ -29,10 +30,16 @@ class TestUnitTests: XCTestCase {
     
     func testExample() {
         // 测试用例的例子，注意测试用例一定要test开头
+//        let mock = OCMCla
+        
         
     }
+
+    
     
     func testAlamofire() {
+        //XCTestExpectation 对于异步测试的支持，借助 XCTestExpectation 类来实现。现在，测试能够为了确定的合适的条件等待一个指定时间长度，而不需要求助于GCD
+//        XCTestExpectation
         let expecta = expectation(description: "本次测试描述")
         let timeout: TimeInterval = 15
         
@@ -40,6 +47,7 @@ class TestUnitTests: XCTestCase {
         Alamofire.request("https://www.cqcb.com/e/member/getuserfen.php",  method: .get).responseJSON { (response) in
             print(response.result)
             if response.error != nil {
+                //在异步方法被测试的相关的回调中实现期望值
                expecta.fulfill()
                XCTAssertNil(response.error, "请求出错")
             } else {
@@ -61,7 +69,14 @@ class TestUnitTests: XCTestCase {
         // 测试性能例子
         self.measure {
             // 需要测试性能的代码
+           self.recycle()
         }
     }
     
+    func recycle()  {
+        for i in 1...100 {
+            print(i)
+        }
+    }
+
 }

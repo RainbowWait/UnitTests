@@ -33,6 +33,7 @@ class TestUnitUITests: XCTestCase {
         super.tearDown()
         
     }
+
     
     func testLogin() {
         #if false
@@ -47,7 +48,7 @@ class TestUnitUITests: XCTestCase {
     
     
     func HHH() {
-        
+        #if false
         let app2 = app
         app.tabBars.buttons["Favorites"].tap()
         
@@ -166,12 +167,12 @@ class TestUnitUITests: XCTestCase {
         app.buttons["切换输入方式"].tap()
         app.buttons["设置输入法"].tap()
 
-
+        #endif
     }
     
     
     func testRegister() {
-        #if false
+        #if true
                 self.tabBar()
                 self.loginAction()
                 app.buttons["注册"].tap()
@@ -179,7 +180,8 @@ class TestUnitUITests: XCTestCase {
         phoneField.tap()
         
         //更换数字键盘
-        let numberPlaneKey = app/*@START_MENU_TOKEN@*/.keys["Number-Plane"]/*[[".keyboards.keys[\"Number-Plane\"]",".keys[\"Number-Plane\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+//        let numberPlaneKey = app/*@START_MENU_TOKEN@*/.keys["Number-Plane"]/*[[".keyboards.keys[\"Number-Plane\"]",".keys[\"Number-Plane\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+            let numberPlaneKey = app.keys["数字键盘"]
         numberPlaneKey.tap()
         app.keys["1"].tap()
         app.keys["8"].tap()
@@ -188,7 +190,8 @@ class TestUnitUITests: XCTestCase {
 //        phoneField.typeText("1823")
     
         //键盘删除键
-        let deleteKey = app/*@START_MENU_TOKEN@*/.keys["delete"]/*[[".keyboards",".keys[\"删除\"]",".keys[\"delete\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+//        let deleteKey = app/*@START_MENU_TOKEN@*/.keys["delete"]/*[[".keyboards",".keys[\"删除\"]",".keys[\"delete\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+            let deleteKey = app.keys["删除"]
         deleteKey.tap()
         //app.keys 和 phoneField.typeText不能同时使用
 //        phoneField.typeText("3142245")
@@ -202,7 +205,7 @@ class TestUnitUITests: XCTestCase {
         app.keys["5"].tap()
         let passwordField = app.tables.textFields["请输入密码"]
         passwordField.tap()
-        numberPlaneKey.tap()
+//        numberPlaneKey.tap()
         passwordField.typeText("111111")
         deleteKey.tap()
         deleteKey.tap()
@@ -217,7 +220,7 @@ class TestUnitUITests: XCTestCase {
         button.tap()
         let codeField = app.tables.textFields["验证码"]
         codeField.tap()
-        numberPlaneKey.tap()
+//        numberPlaneKey.tap()
         codeField.typeText("867466")
         
         app.tables.buttons["注册"].tap()

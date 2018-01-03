@@ -11,6 +11,9 @@
 		6834918A207214DACE6FB6F5 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
 		94B19583F180FDB34A6E2752 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */; };
+		A818A76B1FFCBA200046F6D7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A818A76A1FFCBA200046F6D7 /* libOCMock.a */; };
+		A818A76C1FFCBA460046F6D7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A818A76A1FFCBA200046F6D7 /* libOCMock.a */; };
+		A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */; };
@@ -95,6 +98,8 @@
 		707F2DDFDDE124AFB3FD6A4A /* Pods-TestUnit-TestUnitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnit-TestUnitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		779604E1FA52D201D99C1C73 /* Pods-TestUnitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitUITests/Pods-TestUnitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E7A42F3C607697B17BED92F /* Pods-TestUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUnitTests/Pods-TestUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A818A76A1FFCBA200046F6D7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftExamplesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E2C7871FF098D4008209B0 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A818A76B1FFCBA200046F6D7 /* libOCMock.a in Frameworks */,
 				A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
@@ -156,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A818A76C1FFCBA460046F6D7 /* libOCMock.a in Frameworks */,
 				7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
 				A8FA2EC41FF34EA2001E5013 /* HandyJSON.framework in Frameworks */,
 			);
@@ -204,6 +211,7 @@
 		A8EDD3E61FE21104004D97D1 = {
 			isa = PBXGroup;
 			children = (
+				A818A76A1FFCBA200046F6D7 /* libOCMock.a */,
 				A8EDD3F11FE21104004D97D1 /* TestUnit */,
 				A8EDD4091FE21104004D97D1 /* TestUnitTests */,
 				A8EDD4141FE21104004D97D1 /* TestUnitUITests */,
@@ -254,6 +262,7 @@
 		A8EDD4091FE21104004D97D1 /* TestUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
 				A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */,
 				A8E2C7871FF098D4008209B0 /* BaseModel.swift */,
 				A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */,
@@ -456,10 +465,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitTests/Pods-TestUnit-TestUnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -537,10 +550,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -609,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */,
 				A8FA2EC51FF34F7B001E5013 /* BaseModel.swift in Sources */,
 				A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */,
 				A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */,
@@ -771,6 +789,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 274QRM25A5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -780,6 +799,10 @@
 				INFOPLIST_FILE = TestUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -793,6 +816,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 274QRM25A5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,6 +826,10 @@
 				INFOPLIST_FILE = TestUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -823,6 +851,10 @@
 				);
 				INFOPLIST_FILE = TestUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -845,6 +877,10 @@
 				);
 				INFOPLIST_FILE = TestUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -17,6 +17,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         phoneField.delegate = self
         passwordField.delegate = self
+//        passwordField.keyboardType = .decimalPad
+//        passwordField.keyboardType = .decimalPad
         self.title = "登录"
     }
     

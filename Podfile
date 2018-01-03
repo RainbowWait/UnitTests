@@ -4,12 +4,17 @@ use_frameworks!
 target 'TestUnit' do
 pod 'Alamofire', '~> 4.5'
 
+
   target 'TestUnitTests' do
    pod 'Alamofire', '~> 4.5'
+pod 'Quick'
+pod 'Nimble'
   end
 
   target 'TestUnitUITests' do
 pod 'Alamofire', '~> 4.5'
+pod 'Quick'
+pod 'Nimble'
 
   end
 end
