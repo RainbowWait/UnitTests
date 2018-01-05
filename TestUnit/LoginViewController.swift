@@ -10,9 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var forgetPwdBtn: UIButton!
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var phoneField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
+    var isLogin = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,16 +43,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func LoginAction(_ sender: Any) {
        print("登录成功")
+        self.isLogin = true
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func registerAction(_ sender: UIButton) {
-//        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
+        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
     }
     
     
     @IBAction func forgetAction(_ sender: UIButton) {
-//        self.navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
+        self.navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
     }
     
     

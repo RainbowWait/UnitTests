@@ -16,8 +16,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TestUnit" customModuleProvider="target">
             <connections>
+                <outlet property="forgetPwdBtn" destination="fq9-QZ-31d" id="pFh-Nl-I4D"/>
+                <outlet property="loginBtn" destination="pez-us-rjY" id="a8J-n0-2QG"/>
                 <outlet property="passwordField" destination="gYj-IB-ZLu" id="gie-kF-eNe"/>
                 <outlet property="phoneField" destination="1X2-Pn-bfW" id="pVe-nY-qrk"/>
+                <outlet property="registerBtn" destination="6YM-6h-9tP" id="2OE-sn-qpl"/>
                 <outlet property="view" destination="e1D-2w-f6c" id="h5o-db-YOr"/>
             </connections>
         </placeholder>
@@ -199,7 +202,7 @@
                 <constraint firstItem="TsF-5M-qZ9" firstAttribute="top" secondItem="e1D-2w-f6c" secondAttribute="top" constant="79" id="zNX-cQ-Ecs"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="DoA-kS-FNs"/>
-            <point key="canvasLocation" x="-274" y="-70"/>
+            <point key="canvasLocation" x="-168" y="-79"/>
         </view>
     </objects>
     <resources>

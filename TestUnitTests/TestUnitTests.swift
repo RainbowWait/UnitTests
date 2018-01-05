@@ -15,12 +15,12 @@ import Nimble
 
 
 class TestUnitTests: XCTestCase {
-//    var VC: ViewController!
+    var VC: ViewController!
     
     override func setUp() {
         super.setUp()
         //初始化的代码，在测试方法调用之前调用
-//        VC = ViewController()
+        VC = ViewController()
     }
     
     override func tearDown() {
@@ -31,7 +31,6 @@ class TestUnitTests: XCTestCase {
     func testExample() {
         // 测试用例的例子，注意测试用例一定要test开头
 //        let mock = OCMCla
-        
         
     }
     
@@ -85,6 +84,7 @@ class TestUnitTests: XCTestCase {
 class LoginViewControllerSpec: QuickSpec {
     override func spec() {
         var login: LoginViewController!
+        
         beforeEach {
             login = LoginViewController()
         }
@@ -96,6 +96,12 @@ class LoginViewControllerSpec: QuickSpec {
             it("set navigationController title 登录", closure: {
                 expect(login.title).to(equal("登录"))
             })
+            
+            it("login tap", closure: {
+                login.loginBtn.sendActions(for: .touchUpInside)
+                expect(login.isLogin).to(equal(true))
+            })
+            
         }
         
                     describe("the view") {
@@ -105,6 +111,7 @@ class LoginViewControllerSpec: QuickSpec {
                             login.endAppearanceTransition()
                         }
                     }
+        
         
                     describe(".viewWillDisappear()") {
                         beforeEach {
@@ -116,25 +123,25 @@ class LoginViewControllerSpec: QuickSpec {
     }
 }
 
-class ViewControllerSpec: QuickSpec {
-    var vc: ViewController!
-    override func spec() {
-        beforeEach {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            self.vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
-            
-        }
-        
-        describe(".viewDidLoad") {
-            beforeEach {
-                //访问视图来触发LoginViewController.viewDidLoad
-                let _ = self.vc.view
-            }
-            it("set navigationController title 登录", closure: {
-                expect(self.vc.isLogin).to(equal(true))
-            })
-        }
-        
+//class ViewControllerSpec: QuickSpec {
+//    var vc: ViewController!
+//    override func spec() {
+//        beforeEach {
+//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            self.vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
+//
+//        }
+//
+////        describe(".viewDidLoad") {
+////            beforeEach {
+////                //访问视图来触发LoginViewController.viewDidLoad
+////                let _ = self.vc.view
+////            }
+////            it("set navigationController title 登录", closure: {
+////                expect(self.vc.isLogin).to(equal(true))
+////            })
+////        }
+//
 //        describe("tap action") {
 //            it("print caculator number", closure: {
 //
@@ -144,18 +151,18 @@ class ViewControllerSpec: QuickSpec {
 //                self.vc.fiveBtn.sendActions(for: .touchUpInside)
 //                self.vc.equalBtn.sendActions(for: .touchUpInside)
 //                expect(self.vc.display.text).to(equal("1"))
-
+//
 //            })
 //        }
+////
+//        describe("viewWillDisappear") {
+//            beforeEach {
+//            self.vc.viewWillDisappear(true)
+//            }
+//        }
 //
-        describe("viewWillDisappear") {
-            beforeEach {
-            self.vc.viewWillDisappear(true)
-            }
-        }
-        
-    }
-}
+//    }
+//}
 
 
 
