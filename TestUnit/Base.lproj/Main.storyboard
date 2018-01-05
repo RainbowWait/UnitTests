@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestUnit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerID" id="BYZ-38-t0r" customClass="ViewController" customModule="TestUnit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,11 +343,30 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="ySk-G7-C3X" id="K8Q-1s-Du2"/>
+                        <outlet property="cleanBtn" destination="Jhs-pq-B2C" id="agV-K3-RvX"/>
+                        <outlet property="deleteBtn" destination="cZk-rG-g06" id="oU1-Xq-lm7"/>
+                        <outlet property="devideBtn" destination="gjE-63-ZpD" id="Xeg-Ku-erd"/>
                         <outlet property="display" destination="wBQ-Yp-WWy" id="jEs-qw-AbF"/>
+                        <outlet property="eightBtn" destination="g0Y-uN-hhT" id="Vuf-lw-s29"/>
+                        <outlet property="equalBtn" destination="pHo-Cs-fWb" id="kWs-0k-cxm"/>
+                        <outlet property="fiveBtn" destination="VJL-r9-chB" id="D6b-7N-1Rs"/>
+                        <outlet property="fourBtn" destination="GdX-Pb-qzc" id="e1w-FU-e4X"/>
+                        <outlet property="multiBtn" destination="bdF-0K-Hc9" id="MI1-kz-LCs"/>
+                        <outlet property="nineBtn" destination="b26-Do-OR6" id="Kng-lc-nKE"/>
+                        <outlet property="oneBtn" destination="Sne-wQ-qU2" id="4Ti-j9-Mm4"/>
+                        <outlet property="pointBtn" destination="rso-RT-ZUd" id="NSE-hW-ukz"/>
+                        <outlet property="sevenBtn" destination="o49-ZU-QgB" id="3ar-2l-Gng"/>
+                        <outlet property="sixBtn" destination="fb9-gY-IRT" id="YTE-Ir-Gw5"/>
+                        <outlet property="subBtn" destination="i8e-4R-4yB" id="x21-Qw-eJe"/>
+                        <outlet property="threeBtn" destination="nsK-Nl-ouL" id="G1d-34-a1G"/>
+                        <outlet property="twoBtn" destination="VmG-ga-fQx" id="m1c-St-UhN"/>
+                        <outlet property="zeroBtn" destination="ywA-r1-cDM" id="Si7-i6-adU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="265" y="18"/>
         </scene>
     </scenes>
 </document>

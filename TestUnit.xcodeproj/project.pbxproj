@@ -13,6 +13,7 @@
 		94B19583F180FDB34A6E2752 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A6CDE4676AF8B33B51331 /* Pods_TestUnit_TestUnitUITests.framework */; };
 		A818A76B1FFCBA200046F6D7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A818A76A1FFCBA200046F6D7 /* libOCMock.a */; };
 		A818A76C1FFCBA460046F6D7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A818A76A1FFCBA200046F6D7 /* libOCMock.a */; };
+		A818A7701FFDB4370046F6D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EC81FF35174001E5013 /* LoginViewController.swift */; };
 		A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
@@ -626,6 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A818A7701FFDB4370046F6D7 /* LoginViewController.swift in Sources */,
 				A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */,
 				A8FA2EC51FF34F7B001E5013 /* BaseModel.swift in Sources */,
 				A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */,

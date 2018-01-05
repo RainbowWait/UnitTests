@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         #if true
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.backgroundColor = UIColor.white
+            self.window?.makeKeyAndVisible()
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+             let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
+            self.window?.rootViewController = vc
+            #endif
+        
+        
+        #if false
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()

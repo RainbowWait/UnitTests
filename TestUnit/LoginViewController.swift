@@ -13,6 +13,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var phoneField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneField.delegate = self
@@ -21,6 +22,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        passwordField.keyboardType = .decimalPad
         self.title = "登录"
     }
+    
+   
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == phoneField {
@@ -39,12 +42,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func registerAction(_ sender: UIButton) {
-        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
+//        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
     }
     
     
     @IBAction func forgetAction(_ sender: UIButton) {
-        self.navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
+//        self.navigationController?.pushViewController(ForgetPasswordViewController(), animated: true)
     }
     
     

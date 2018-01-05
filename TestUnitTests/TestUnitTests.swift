@@ -34,6 +34,8 @@ class TestUnitTests: XCTestCase {
         
         
     }
+    
+    
 
     
     
@@ -78,5 +80,82 @@ class TestUnitTests: XCTestCase {
             print(i)
         }
     }
-
 }
+
+class LoginViewControllerSpec: QuickSpec {
+    override func spec() {
+        var login: LoginViewController!
+        beforeEach {
+            login = LoginViewController()
+        }
+        describe(".viewDidLoad") {
+            beforeEach {
+                //访问视图来触发LoginViewController.viewDidLoad
+                let _ = login.view
+            }
+            it("set navigationController title 登录", closure: {
+                expect(login.title).to(equal("登录"))
+            })
+        }
+        
+                    describe("the view") {
+                        beforeEach {
+                            //触发.viewDidLoad(), .viewWillAppear(), and .viewDidAppear() 事件
+                            login.beginAppearanceTransition(true, animated: false)
+                            login.endAppearanceTransition()
+                        }
+                    }
+        
+                    describe(".viewWillDisappear()") {
+                        beforeEach {
+                            //直接调用生命周期事件
+                            login.viewWillDisappear(false)
+                        }
+                    }
+        
+    }
+}
+
+class ViewControllerSpec: QuickSpec {
+    var vc: ViewController!
+    override func spec() {
+        beforeEach {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            self.vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
+            
+        }
+        
+        describe(".viewDidLoad") {
+            beforeEach {
+                //访问视图来触发LoginViewController.viewDidLoad
+                let _ = self.vc.view
+            }
+            it("set navigationController title 登录", closure: {
+                expect(self.vc.isLogin).to(equal(true))
+            })
+        }
+        
+//        describe("tap action") {
+//            it("print caculator number", closure: {
+//
+//                self.vc.oneBtn.sendActions(for: .touchUpInside)
+//                self.vc.twoBtn.sendActions(for: .touchUpInside)
+//                self.vc.addBtn.sendActions(for: .touchUpInside)
+//                self.vc.fiveBtn.sendActions(for: .touchUpInside)
+//                self.vc.equalBtn.sendActions(for: .touchUpInside)
+//                expect(self.vc.display.text).to(equal("1"))
+
+//            })
+//        }
+//
+        describe("viewWillDisappear") {
+            beforeEach {
+            self.vc.viewWillDisappear(true)
+            }
+        }
+        
+    }
+}
+
+
+
