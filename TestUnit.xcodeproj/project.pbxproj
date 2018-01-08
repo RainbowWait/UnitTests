@@ -24,6 +24,10 @@
 		A82174211FFF6A3F00FAA1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */; };
 		A82174221FFF6A4200FAA1FB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */; };
 		A82174241FFF72B800FAA1FB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82174231FFF72B700FAA1FB /* DataProvider.swift */; };
+		A8217425200302EF00FAA1FB /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2C7871FF098D4008209B0 /* BaseModel.swift */; };
+		A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82174231FFF72B700FAA1FB /* DataProvider.swift */; };
+		A83EE633200315020067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
+		A83EE634200317010067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
 		A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
@@ -112,6 +116,7 @@
 		A818A76A1FFCBA200046F6D7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftExamplesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A82174231FFF72B700FAA1FB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		A83EE632200315020067E428 /* Dolphin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dolphin.swift; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E2C7871FF098D4008209B0 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -220,6 +225,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A83EE630200314810067E428 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A82174231FFF72B700FAA1FB /* DataProvider.swift */,
+				A8E2C7871FF098D4008209B0 /* BaseModel.swift */,
+				A83EE632200315020067E428 /* Dolphin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A83EE631200314890067E428 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */,
+				A8EDD3F41FE21104004D97D1 /* ViewController.swift */,
+				A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */,
+				A8FA2EF01FF392A6001E5013 /* SecondViewController.xib */,
+				A8FA2EC81FF35174001E5013 /* LoginViewController.swift */,
+				A8FA2EF31FF395E5001E5013 /* RegisterViewController.swift */,
+				A8FA2EF41FF395E5001E5013 /* RegisterViewController.xib */,
+				A8FA2EC91FF35174001E5013 /* LoginViewController.xib */,
+				A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */,
+				A8FA2EF71FF395FB001E5013 /* ForgetPasswordViewController.swift */,
+				A8FA2EF81FF395FB001E5013 /* ForgetPasswordViewController.xib */,
+				A8FA2ECC1FF35184001E5013 /* ThirdViewController.swift */,
+				A8FA2ECD1FF35184001E5013 /* ThirdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A8EDD3E61FE21104004D97D1 = {
 			isa = PBXGroup;
 			children = (
@@ -248,26 +283,14 @@
 		A8EDD3F11FE21104004D97D1 /* TestUnit */ = {
 			isa = PBXGroup;
 			children = (
+				A83EE631200314890067E428 /* Controller */,
+				A83EE630200314810067E428 /* Model */,
 				A8FA2EFB1FF4846F001E5013 /* View */,
-				A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */,
-				A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */,
-				A8EDD3F41FE21104004D97D1 /* ViewController.swift */,
-				A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */,
-				A8FA2EF01FF392A6001E5013 /* SecondViewController.xib */,
-				A8FA2EC81FF35174001E5013 /* LoginViewController.swift */,
-				A8FA2EC91FF35174001E5013 /* LoginViewController.xib */,
-				A8FA2EF31FF395E5001E5013 /* RegisterViewController.swift */,
-				A8FA2EF41FF395E5001E5013 /* RegisterViewController.xib */,
-				A8FA2EF71FF395FB001E5013 /* ForgetPasswordViewController.swift */,
-				A8FA2EF81FF395FB001E5013 /* ForgetPasswordViewController.xib */,
-				A8FA2ECC1FF35184001E5013 /* ThirdViewController.swift */,
-				A8FA2ECD1FF35184001E5013 /* ThirdViewController.xib */,
 				A8EDD3F61FE21104004D97D1 /* Main.storyboard */,
 				A8EDD3FC1FE21104004D97D1 /* Assets.xcassets */,
 				A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */,
 				A8EDD4011FE21104004D97D1 /* Info.plist */,
 				A8EDD3F91FE21104004D97D1 /* TestUnit.xcdatamodeld */,
-				A82174231FFF72B700FAA1FB /* DataProvider.swift */,
 			);
 			path = TestUnit;
 			sourceTree = "<group>";
@@ -277,7 +300,6 @@
 			children = (
 				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
 				A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */,
-				A8E2C7871FF098D4008209B0 /* BaseModel.swift */,
 				A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */,
 				A8EDD40C1FE21104004D97D1 /* Info.plist */,
 			);
@@ -620,7 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8217425200302EF00FAA1FB /* BaseModel.swift in Sources */,
 				A8FA2F051FF49BF3001E5013 /* FooterVier.swift in Sources */,
+				A83EE633200315020067E428 /* Dolphin.swift in Sources */,
 				A8FA2EFE1FF48487001E5013 /* RegisterCell.swift in Sources */,
 				A8FA2EC71FF350D9001E5013 /* BaseNavigationController.swift in Sources */,
 				A8EDD3F51FE21104004D97D1 /* ViewController.swift in Sources */,
@@ -640,6 +664,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83EE634200317010067E428 /* Dolphin.swift in Sources */,
+				A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */,
 				A82174221FFF6A4200FAA1FB /* BaseNavigationController.swift in Sources */,
 				A82174211FFF6A3F00FAA1FB /* AppDelegate.swift in Sources */,
 				A82174201FFF6A3A00FAA1FB /* RegisterCodeCell.swift in Sources */,

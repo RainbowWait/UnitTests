@@ -47,6 +47,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var multiBtn: UIButton!
     var isLogin = false
     
+    
+    
     var calculator = Calculator()
     @IBOutlet weak var display: UITextField!
     override func viewDidLoad() {

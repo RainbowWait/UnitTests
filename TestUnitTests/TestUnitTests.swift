@@ -88,6 +88,7 @@ class LoginViewControllerSpec: QuickSpec {
         beforeEach {
             login = LoginViewController()
         }
+        //定义一个示例，示例组是示例的逻辑分组
         describe(".viewDidLoad") {
             beforeEach {
                 //访问视图来触发LoginViewController.viewDidLoad
@@ -123,46 +124,97 @@ class LoginViewControllerSpec: QuickSpec {
     }
 }
 
-//class ViewControllerSpec: QuickSpec {
-//    var vc: ViewController!
-//    override func spec() {
-//        beforeEach {
-//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//            self.vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
+class SecondViewControllerSpec: QuickSpec {
+    override func spec() {
+        var vc: SecondViewController!
+        describe("view controller") {
+            beforeEach {
+                vc = SecondViewController()
+                
+            }
+            it("fetch data with data provider", closure: {
+                let mockProvider = MockDataProvider()
+                vc.dataProvider = mockProvider
+                expect(mockProvider.fetchCalled).to(equal(false))
+                let _ = vc.view
+                expect(mockProvider.fetchCalled).to(equal(true))
+                
+            })
+        }
+    }
+}
+
+//使用 Shared Assertion 来复用测试模板代码
+
+class EdibleSharedExamplesConfiguration: QuickConfiguration {
+    override class func configure(_ configuration: Configuration) {
+        sharedExamples("something edible") { (sharedExampleContext: @escaping SharedExampleContext) in
+            it("makes dolphins happy") {
+                let dolphin = Dolphin(happy: false)
+                let edible = sharedExampleContext()["edible"]
+                dolphin.eat(edible as! Mackerel)
+                expect(dolphin.isHappy).to(beTruthy())
+            }
+        }
+    }
+}
+
+class MackerelSpec: QuickSpec {
+    override func spec() {
+        var mackerel: Mackerel!
+        beforeEach {
+            mackerel = Mackerel()
+        }
+        
+        //带参数
+        itBehavesLike("something edible"){
+            ["edible": mackerel]
+        }
+        //不带参数
+//        sharedExamples("something edible") {
 //
 //        }
+    }
+}
+
+
+
+class ViewControllerSpec: QuickSpec {
+    var vc: ViewController!
+    override func spec() {
+        beforeEach {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.backgroundColor = UIColor.white
+            window.makeKeyAndVisible()
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
+            window.rootViewController = self.vc
+            
+
+        }
+
+        describe("tap action") {
+            it("print caculator number", closure: {
+
+                self.vc.oneBtn.sendActions(for: .touchUpInside)
+                self.vc.twoBtn.sendActions(for: .touchUpInside)
+                self.vc.addBtn.sendActions(for: .touchUpInside)
+                self.vc.fiveBtn.sendActions(for: .touchUpInside)
+                self.vc.equalBtn.sendActions(for: .touchUpInside)
+                expect(self.vc.display.text).to(equal("1"))
+
+            })
+        }
 //
-////        describe(".viewDidLoad") {
-////            beforeEach {
-////                //访问视图来触发LoginViewController.viewDidLoad
-////                let _ = self.vc.view
-////            }
-////            it("set navigationController title 登录", closure: {
-////                expect(self.vc.isLogin).to(equal(true))
-////            })
-////        }
-//
-//        describe("tap action") {
-//            it("print caculator number", closure: {
-//
-//                self.vc.oneBtn.sendActions(for: .touchUpInside)
-//                self.vc.twoBtn.sendActions(for: .touchUpInside)
-//                self.vc.addBtn.sendActions(for: .touchUpInside)
-//                self.vc.fiveBtn.sendActions(for: .touchUpInside)
-//                self.vc.equalBtn.sendActions(for: .touchUpInside)
-//                expect(self.vc.display.text).to(equal("1"))
-//
-//            })
-//        }
-////
-//        describe("viewWillDisappear") {
-//            beforeEach {
-//            self.vc.viewWillDisappear(true)
-//            }
-//        }
-//
-//    }
-//}
+        describe("viewWillDisappear") {
+            beforeEach {
+            self.vc.viewWillDisappear(true)
+            }
+        }
+
+    }
+}
 
 
 

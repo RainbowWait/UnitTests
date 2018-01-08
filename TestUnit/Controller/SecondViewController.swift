@@ -10,10 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var dataProvider: DataProviderProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
-        // Do any additional setup after loading the view.
+        dataProvider = dataProvider ?? DataProvider()
+        dataProvider?.fetch(callback: { (data) -> Void in
+//            self.resultLabel.text = data
+            print("data = \(data)")
+        })
     }
 
     @IBAction func LoginAction(_ sender: Any) {
