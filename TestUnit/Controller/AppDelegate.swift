@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let component = URLComponents(url: URL(string: "http://mobile.hktsc.cc/services/list?appPage=serviceList&brandId=1")!, resolvingAgainstBaseURL: false)
+        print("scheme = \(component?.scheme) user = \(component?.user) password = \(component?.password) host = \(component?.host) port = \(component?.port) path = \(component?.path) query = \(component?.query) fragment = \(component?.fragment)")
+        
+        print("percentEncodedUser = \(component?.percentEncodedUser) percentEncodedPassword = \(component?.percentEncodedPassword) percentEncodedHost = \(component?.percentEncodedHost) percentEncodedPath = \(component?.percentEncodedPath) percentEncodedQuery = \(component?.percentEncodedQuery) percentEncodedFragment = \(component?.percentEncodedFragment)")
+        let percentEncodedQuery = component?.percentEncodedQuery.map {
+            $0 + "&" } ?? ""
+        print(percentEncodedQuery)
+        
         #if true
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.backgroundColor = UIColor.white

@@ -17,6 +17,7 @@ public protocol DataProviderProtocol {
 class DataProvider: NSObject, DataProviderProtocol {
     func fetch(callback: @escaping (String) -> Void) {
         Alamofire.request("https://www.cqcb.com/e/member/getuserfen.php",  method: .get).responseJSON { (response) in
+            
             if response.error != nil {
             } else {
                 let result = response.result.value as! NSDictionary

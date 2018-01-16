@@ -28,6 +28,7 @@
 		A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82174231FFF72B700FAA1FB /* DataProvider.swift */; };
 		A83EE633200315020067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
 		A83EE634200317010067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
+		A8584770200454EA009C4BD6 /* NimbleExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858476F200454EA009C4BD6 /* NimbleExpect.swift */; };
 		A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
 		A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */; };
@@ -117,6 +118,7 @@
 		A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftExamplesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A82174231FFF72B700FAA1FB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		A83EE632200315020067E428 /* Dolphin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dolphin.swift; sourceTree = "<group>"; };
+		A858476F200454EA009C4BD6 /* NimbleExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleExpect.swift; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E2C7871FF098D4008209B0 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
 				A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */,
 				A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */,
+				A858476F200454EA009C4BD6 /* NimbleExpect.swift */,
 				A8EDD40C1FE21104004D97D1 /* Info.plist */,
 			);
 			path = TestUnitTests;
@@ -664,6 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8584770200454EA009C4BD6 /* NimbleExpect.swift in Sources */,
 				A83EE634200317010067E428 /* Dolphin.swift in Sources */,
 				A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */,
 				A82174221FFF6A4200FAA1FB /* BaseNavigationController.swift in Sources */,
