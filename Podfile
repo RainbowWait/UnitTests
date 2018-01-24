@@ -9,12 +9,14 @@ pod 'Alamofire', '~> 4.5'
    pod 'Alamofire', '~> 4.5'
 pod 'Quick'
 pod 'Nimble'
+pod 'OHHTTPStubs/Swift'
   end
 
   target 'TestUnitUITests' do
 pod 'Alamofire', '~> 4.5'
 pod 'Quick'
 pod 'Nimble'
+pod 'OHHTTPStubs/Swift'
 
   end
 end

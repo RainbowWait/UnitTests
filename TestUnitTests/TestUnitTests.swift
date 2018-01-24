@@ -29,8 +29,7 @@ class TestUnitTests: XCTestCase {
     }
     
     func testExample() {
-        // 测试用例的例子，注意测试用例一定要test开头
-//        let mock = OCMCla
+        // 测试用例的例子，注意测试用例一定要test开头 比较多的命名方式是 “test + 要测试的方法和类名”
         
     }
     

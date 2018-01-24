@@ -44,6 +44,11 @@
 		A8EDD4001FE21104004D97D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */; };
 		A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */; };
 		A8EDD4161FE21104004D97D1 /* TestUnitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD4151FE21104004D97D1 /* TestUnitUITests.swift */; };
+		A8EEDF1E201821DE000249AD /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EEDF1D201821DD000249AD /* OCMock.framework */; };
+		A8EEDF1F201821FC000249AD /* OCMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8EEDF1D201821DD000249AD /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8EEDF212018224C000249AD /* OCMOCKTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EEDF202018224C000249AD /* OCMOCKTest.swift */; };
+		A8EEDF22201822FA000249AD /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EEDF1D201821DD000249AD /* OCMock.framework */; };
+		A8EEDF3620183934000249AD /* OHHTTPStubsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EEDF3520183934000249AD /* OHHTTPStubsTest.swift */; };
 		A8FA2EBD1FF34D69001E5013 /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; };
 		A8FA2EBE1FF34DA9001E5013 /* CalculatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; };
 		A8FA2EBF1FF34DA9001E5013 /* CalculatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -94,6 +99,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A8EEDF1F201821FC000249AD /* OCMock.framework in Embed Frameworks */,
 				A8E2C77B1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Embed Frameworks */,
 				A8FA2EC31FF34E42001E5013 /* HandyJSON.framework in Embed Frameworks */,
 				A8FA2EBF1FF34DA9001E5013 /* CalculatorKit.framework in Embed Frameworks */,
@@ -136,6 +142,9 @@
 		A8EDD4111FE21104004D97D1 /* TestUnitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EDD4151FE21104004D97D1 /* TestUnitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUnitUITests.swift; sourceTree = "<group>"; };
 		A8EDD4171FE21104004D97D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EEDF1D201821DD000249AD /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
+		A8EEDF202018224C000249AD /* OCMOCKTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCMOCKTest.swift; sourceTree = "<group>"; };
+		A8EEDF3520183934000249AD /* OHHTTPStubsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPStubsTest.swift; sourceTree = "<group>"; };
 		A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorKit.framework; sourceTree = "<group>"; };
 		A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
 		A8FA2EC61FF350D9001E5013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -171,6 +180,7 @@
 				A8E2C7781FECE8CF008209B0 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
 				A8FA2EBE1FF34DA9001E5013 /* CalculatorKit.framework in Frameworks */,
 				A8FA2EC11FF34E28001E5013 /* HandyJSON.framework in Frameworks */,
+				A8EEDF1E201821DE000249AD /* OCMock.framework in Frameworks */,
 				A8FA2EC21FF34E42001E5013 /* HandyJSON.framework in Frameworks */,
 				60E87A3A9DEABB149B434B3C /* Pods_TestUnit.framework in Frameworks */,
 				A8FA2EBD1FF34D69001E5013 /* CalculatorKit.framework in Frameworks */,
@@ -181,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EEDF22201822FA000249AD /* OCMock.framework in Frameworks */,
 				A818A76C1FFCBA460046F6D7 /* libOCMock.a in Frameworks */,
 				7AD561AB7012DBA2DD694339 /* Pods_TestUnit_TestUnitTests.framework in Frameworks */,
 				A8FA2EC41FF34EA2001E5013 /* HandyJSON.framework in Frameworks */,
@@ -265,6 +276,7 @@
 				A8EDD4091FE21104004D97D1 /* TestUnitTests */,
 				A8EDD4141FE21104004D97D1 /* TestUnitUITests */,
 				A8EDD3F01FE21104004D97D1 /* Products */,
+				A8EEDF1D201821DD000249AD /* OCMock.framework */,
 				A8FA2EC01FF34E28001E5013 /* HandyJSON.framework */,
 				A8FA2EBC1FF34D69001E5013 /* CalculatorKit.framework */,
 				0DAE1E606E37C41887F937A4 /* Pods */,
@@ -301,9 +313,11 @@
 			isa = PBXGroup;
 			children = (
 				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
+				A8EEDF202018224C000249AD /* OCMOCKTest.swift */,
 				A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */,
 				A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */,
 				A858476F200454EA009C4BD6 /* NimbleExpect.swift */,
+				A8EEDF3520183934000249AD /* OHHTTPStubsTest.swift */,
 				A8EDD40C1FE21104004D97D1 /* Info.plist */,
 			);
 			path = TestUnitTests;
@@ -504,12 +518,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitTests/Pods-TestUnit-TestUnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,12 +605,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,7 +698,9 @@
 				A821741B1FFF681B00FAA1FB /* RegisterViewController.swift in Sources */,
 				A821741A1FFF680500FAA1FB /* SecondViewController.swift in Sources */,
 				A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */,
+				A8EEDF212018224C000249AD /* OCMOCKTest.swift in Sources */,
 				A818A7701FFDB4370046F6D7 /* LoginViewController.swift in Sources */,
+				A8EEDF3620183934000249AD /* OHHTTPStubsTest.swift in Sources */,
 				A8FA2EC51FF34F7B001E5013 /* BaseModel.swift in Sources */,
 				A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */,
 				A8EDD40B1FE21104004D97D1 /* TestUnitTests.swift in Sources */,
@@ -911,6 +931,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhengxiaoyan/Desktop/Swift/TestUnit/TestUnitTests/SwiftExamplesTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestUnit.app/TestUnit";
@@ -937,6 +958,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhengxiaoyan/Desktop/Swift/TestUnit/TestUnitTests/SwiftExamplesTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestUnit.app/TestUnit";
