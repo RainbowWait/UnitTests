@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0 + "&" } ?? ""
         print(percentEncodedQuery)
         
-        #if true
+        #if false
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.backgroundColor = UIColor.white
             self.window?.makeKeyAndVisible()
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             #endif
         
         
-        #if false
+        #if true
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()

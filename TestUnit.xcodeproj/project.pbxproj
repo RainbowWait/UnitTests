@@ -28,6 +28,10 @@
 		A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82174231FFF72B700FAA1FB /* DataProvider.swift */; };
 		A83EE633200315020067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
 		A83EE634200317010067E428 /* Dolphin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE632200315020067E428 /* Dolphin.swift */; };
+		A8414F2120198CA1009AF5BD /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8414F2220198CA1009AF5BD /* OHHTTPStubs.framework */; };
+		A8414F2320198CD6009AF5BD /* SwiftExamplesTests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */; };
+		A8414F2420198CDD009AF5BD /* SwiftExamplesTests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */; };
+		A8414F2A20199DD7009AF5BD /* stub.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8414F2920199DD7009AF5BD /* stub.txt */; };
 		A8584770200454EA009C4BD6 /* NimbleExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858476F200454EA009C4BD6 /* NimbleExpect.swift */; };
 		A85ED5261FFC6BA3008C4CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EDD3F41FE21104004D97D1 /* ViewController.swift */; };
 		A8A47F371FF0DA13000CE4EE /* UnitConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */; };
@@ -124,6 +128,8 @@
 		A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftExamplesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A82174231FFF72B700FAA1FB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		A83EE632200315020067E428 /* Dolphin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dolphin.swift; sourceTree = "<group>"; };
+		A8414F2220198CA1009AF5BD /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8414F2920199DD7009AF5BD /* stub.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stub.txt; sourceTree = "<group>"; };
 		A858476F200454EA009C4BD6 /* NimbleExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleExpect.swift; sourceTree = "<group>"; };
 		A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionsTests.swift; sourceTree = "<group>"; };
 		A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TestUnit_TestUnitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8414F2120198CA1009AF5BD /* OHHTTPStubs.framework in Frameworks */,
 				A818A76B1FFCBA200046F6D7 /* libOCMock.a in Frameworks */,
 				A8E2C77A1FECE8CF008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
 				A8E2C7761FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework in Frameworks */,
@@ -230,6 +237,7 @@
 		51843B94509CDDD09A193284 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8414F2220198CA1009AF5BD /* OHHTTPStubs.framework */,
 				A8E2C7771FECE85F008209B0 /* Pods_TestUnit_TestUnitUITests.framework */,
 				3951DF9011B4BED659702970 /* Pods_TestUnit.framework */,
 				0C01F8CF6E83E7D0CB619E87 /* Pods_TestUnit_TestUnitTests.framework */,
@@ -251,6 +259,7 @@
 		A83EE631200314890067E428 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
 				A8EDD3F21FE21104004D97D1 /* AppDelegate.swift */,
 				A8EDD3F41FE21104004D97D1 /* ViewController.swift */,
 				A8FA2EEF1FF392A6001E5013 /* SecondViewController.swift */,
@@ -301,6 +310,7 @@
 				A83EE630200314810067E428 /* Model */,
 				A8FA2EFB1FF4846F001E5013 /* View */,
 				A8EDD3F61FE21104004D97D1 /* Main.storyboard */,
+				A8414F2920199DD7009AF5BD /* stub.txt */,
 				A8EDD3FC1FE21104004D97D1 /* Assets.xcassets */,
 				A8EDD3FE1FE21104004D97D1 /* LaunchScreen.storyboard */,
 				A8EDD4011FE21104004D97D1 /* Info.plist */,
@@ -312,7 +322,6 @@
 		A8EDD4091FE21104004D97D1 /* TestUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A818A76D1FFCBAB40046F6D7 /* SwiftExamplesTests-Bridging-Header.h */,
 				A8EEDF202018224C000249AD /* OCMOCKTest.swift */,
 				A8A47F361FF0DA13000CE4EE /* UnitConversionsTests.swift */,
 				A8EDD40A1FE21104004D97D1 /* TestUnitTests.swift */,
@@ -462,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FA2ECB1FF35174001E5013 /* LoginViewController.xib in Resources */,
+				A8414F2A20199DD7009AF5BD /* stub.txt in Resources */,
 				A8EDD4001FE21104004D97D1 /* LaunchScreen.storyboard in Resources */,
 				A8FA2EF61FF395E5001E5013 /* RegisterViewController.xib in Resources */,
 				A8FA2EFF1FF48487001E5013 /* RegisterCell.xib in Resources */,
@@ -499,10 +509,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit/Pods-TestUnit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -517,15 +529,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitTests/Pods-TestUnit-TestUnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,15 +616,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestUnit-TestUnitUITests/Pods-TestUnit-TestUnitUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +675,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8414F2320198CD6009AF5BD /* SwiftExamplesTests-Bridging-Header.h in Sources */,
 				A8217425200302EF00FAA1FB /* BaseModel.swift in Sources */,
 				A8FA2F051FF49BF3001E5013 /* FooterVier.swift in Sources */,
 				A83EE633200315020067E428 /* Dolphin.swift in Sources */,
@@ -685,6 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8414F2420198CDD009AF5BD /* SwiftExamplesTests-Bridging-Header.h in Sources */,
 				A8584770200454EA009C4BD6 /* NimbleExpect.swift in Sources */,
 				A83EE634200317010067E428 /* Dolphin.swift in Sources */,
 				A83EE62E20030DC80067E428 /* DataProvider.swift in Sources */,
@@ -879,6 +893,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhengxiaoyan/Desktop/Swift/TestUnit/TestUnit/Controller/SwiftExamplesTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -906,6 +921,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.TestUnit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhengxiaoyan/Desktop/Swift/TestUnit/TestUnit/Controller/SwiftExamplesTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

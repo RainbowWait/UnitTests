@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -17,6 +18,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var passwordField: UITextField!
     var isLogin = false
+    var textStub: OHHTTPStubsDescriptor!
     
     
     override func viewDidLoad() {
@@ -26,6 +28,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        passwordField.keyboardType = .decimalPad
 //        passwordField.keyboardType = .decimalPad
         self.title = "登录"
+        self.OHHTTPStubsTest()
+        
+    }
+    
+    func OHHTTPStubsTest() {
+       textStub = stub(condition: isHost("www.opensource.apple.com") && isExtension("txt")) { (_) -> OHHTTPStubsResponse in
+            return fixture(filePath: OHPathForFile("stub.txt", type(of: self))!, headers: ["Content-Type": "text/plain"]).requestTime(1.0, responseTime: OHHTTPStubsDownloadSpeed3G)
+        }
+        textStub.name = "text stub"
+    }
+    func request() {
+        if !isLogin {
+            let urlString = "http://www.opensource.apple.com/source/Git/Git-26/src/git-htmldocs/git-commit.txt?txt"
+            Alamofire.request(urlString, method: .get).responseJSON { (response) in
+                if let receivedData = response.data, let receivedText = NSString(data: receivedData, encoding: String.Encoding.ascii.rawValue) {
+                    print("result.data = \(receivedText)")
+                    self.isLogin = true
+                }
+            }
+        } else {
+            self.isLogin = false
+            OHHTTPStubs.removeStub(textStub)
+        }
+        
     }
     
    
@@ -43,8 +69,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func LoginAction(_ sender: Any) {
        print("登录成功")
-        self.isLogin = true
-        self.navigationController?.popViewController(animated: true)
+        self.request()
+//        self.isLogin = true
+//        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func registerAction(_ sender: UIButton) {

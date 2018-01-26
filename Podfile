@@ -3,6 +3,7 @@ platform :ios, '9.0'
 use_frameworks!
 target 'TestUnit' do
 pod 'Alamofire', '~> 4.5'
+pod 'OHHTTPStubs/Swift'
 
 
   target 'TestUnitTests' do
