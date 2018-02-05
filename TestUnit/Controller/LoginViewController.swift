@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import OHHTTPStubs
+
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -19,6 +21,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     var isLogin = false
     var textStub: OHHTTPStubsDescriptor!
+    var jsonResponse: OHHTTPStubsDescriptor!
+    
     
     
     override func viewDidLoad() {
@@ -28,28 +32,43 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        passwordField.keyboardType = .decimalPad
 //        passwordField.keyboardType = .decimalPad
         self.title = "登录"
-        self.OHHTTPStubsTest()
+//        self.OHHTTPStubsTest()
+        self.OHHTTPStubsJsonResponse()
         
+    }
+    
+    func OHHTTPStubsJsonResponse() {
+        jsonResponse = stub(condition: isHost("www.opensource.apple.com"), response: { (_) -> OHHTTPStubsResponse in
+            let dic = ["key1": "value1", "key2": [1, 2, 3]] as [String : Any]
+            
+            return OHHTTPStubsResponse(jsonObject: dic, statusCode: 200, headers: ["Content-Type": "text/plain"]).responseTime(OHHTTPStubsDownloadSpeed1KBPS)
+        })
     }
     
     func OHHTTPStubsTest() {
        textStub = stub(condition: isHost("www.opensource.apple.com") && isExtension("txt")) { (_) -> OHHTTPStubsResponse in
-            return fixture(filePath: OHPathForFile("stub.txt", type(of: self))!, headers: ["Content-Type": "text/plain"]).requestTime(1.0, responseTime: OHHTTPStubsDownloadSpeed3G)
+            return fixture(filePath: OHPathForFile("stub.txt", type(of: self))!, headers: ["Content-Type": "text/plain"]).requestTime(1.0, responseTime: OHHTTPStubsDownloadSpeedWifi)
         }
         textStub.name = "text stub"
     }
+    
+    
+    
+    
     func request() {
         if !isLogin {
             let urlString = "http://www.opensource.apple.com/source/Git/Git-26/src/git-htmldocs/git-commit.txt?txt"
             Alamofire.request(urlString, method: .get).responseJSON { (response) in
                 if let receivedData = response.data, let receivedText = NSString(data: receivedData, encoding: String.Encoding.ascii.rawValue) {
                     print("result.data = \(receivedText)")
+                    print("result = \(response.data)")
                     self.isLogin = true
+                    
                 }
             }
         } else {
             self.isLogin = false
-            OHHTTPStubs.removeStub(textStub)
+            OHHTTPStubs.removeAllStubs()
         }
         
     }
