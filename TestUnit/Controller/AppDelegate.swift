@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let str = "哈哈哈哈哈哈H"
+        print("length = \(str.lengthOfBytes(using: String.Encoding.utf8))")
+        
+        
         let component = URLComponents(url: URL(string: "http://mobile.hktsc.cc/services/list?appPage=serviceList&brandId=1")!, resolvingAgainstBaseURL: false)
         print("scheme = \(component?.scheme) user = \(component?.user) password = \(component?.password) host = \(component?.host) port = \(component?.port) path = \(component?.path) query = \(component?.query) fragment = \(component?.fragment)")
         
